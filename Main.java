@@ -19,7 +19,7 @@ public class Main {
         if (encontrado != null) {
             encontrado.mostrarAlumno();
         } else {
-            System.out.println("Alumno no encontrado.");
+            System.out.println("Alumno no encontrado, ingrese otra vez.");
         }
     }
 }

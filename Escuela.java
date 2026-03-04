@@ -1,4 +1,4 @@
-public class Escuela{
+public class Escuela extends Alumno{
 
     private Alumno alumno1;
     private Alumno alumno2;
