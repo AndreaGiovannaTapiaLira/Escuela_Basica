@@ -1,25 +1,22 @@
 public class Alumno {
+
     private String nombre;
     private String matricula;
     private double calificacion1;
     private double calificacion2;
     private double calificacion3;
 
-    public Alumno(String nombre, String matricula) {
+    public Alumno(String nombre, String matricula,
+                  double c1, double c2, double c3) {
         this.nombre = nombre;
         this.matricula = matricula;
+        this.calificacion1 = c1;
+        this.calificacion2 = c2;
+        this.calificacion3 = c3;
     }
 
-    public void setCalificacion1(double valor) {
-        this.calificacion1 = valor;
-    }
-
-    public void setCalificacion2(double valor) {
-        this.calificacion2 = valor;
-    }
-
-    public void setCalificacion3(double valor) {
-        this.calificacion3 = valor;
+    public String getMatricula() {
+        return matricula;
     }
 
     public double calcularPromedio() {
@@ -27,10 +24,11 @@ public class Alumno {
     }
 
     public void mostrarAlumno() {
-        System.out.println("\n=== Datos del Alumno ===");
-        System.out.println("Matrícula: " + matricula);
         System.out.println("Nombre: " + nombre);
-        System.out.println("Calificaciones: " + calificacion1 + ", " + calificacion2 + ", " + calificacion3);
-        System.out.println("Promedio: " + String.format("%.2f", calcularPromedio()));
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Calificación 1: " + calificacion1);
+        System.out.println("Calificación 2: " + calificacion2);
+        System.out.println("Calificación 3: " + calificacion3);
+        System.out.println("Promedio: " + calcularPromedio());
     }
 }
